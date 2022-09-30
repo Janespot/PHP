@@ -47,6 +47,8 @@ class Database{
 	}
 	
 	public function execute(){
-	
+		$this->execute();
+		return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
 }
 			
