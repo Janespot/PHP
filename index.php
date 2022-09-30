@@ -14,8 +14,8 @@ $rows = $database->resultset();
 <div>
 <?php foreach($rows as $row) : ?>
 	<div>
-		<h3><?php echo $row['title']; ?></h3>  //title is a column from our table containing titles
-		<p><?php echo $row['body']; ?></p>    //body is a column from our table containing blog body
+		<h3><?php echo $row['title']; ?></h3>  <!--title is a column from our table containing titles-->
+		<p><?php echo $row['body']; ?></p>    <!--body is a column from our table containing blog body-->
 	</div>
 <?php endforeach; ?>
 </div>
