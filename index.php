@@ -3,7 +3,8 @@ require 'classes/database.php';
 
 $database = new Database;
 
-$database->query('SELECT * FROM table_name');
+$database->query('SELECT * FROM table_name');// to add 'WHERE id = :id'...
+//...add '$database->bind(':id', 1);'...where 1 is id number
 $rows = $database->resultset();
 
 /*print_r($rows); //prints as arrays*/
