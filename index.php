@@ -8,6 +8,7 @@ $database = new Database;
 $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
 if($post['submit']){
+	$id = $post['id'];
 	$title = $post['title'];
 	$body = $post['body'];
 	//echo $title;
@@ -30,6 +31,8 @@ $rows = $database->resultset();
 <!--Inserting data-->
 <h1>Add post</h1>
 <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+	<label>Post ID</label><br />
+	<input type="text" name="id" placeholder="Specify ID" /><br /><br />
 	<label>Post Title</label><br />
 	<input type="text" name="title" placeholder="Add a Title..." /><br /><br />
 	<label>Post Body</label><br />
