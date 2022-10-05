@@ -54,7 +54,7 @@ class Database{
 		$this->dbh->lastInsertId();
 	}
 
-	public function resultSet(){
+	public function resultset(){
 		$this->execute();
 		return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
