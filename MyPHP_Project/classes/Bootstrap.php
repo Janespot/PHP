@@ -11,6 +11,12 @@ class Bootstrap{
 		}else{
 			$this->controller = $this->request['controller'];
 		}
+		if($this->request['action'] == ""){
+                        $this->action = 'index';
+                }else{
+                        $this->action = $this->request['action'];
+                }
+
 	}
 }
 
