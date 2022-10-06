@@ -29,8 +29,17 @@ class Bootstrap{
 					return new $this->controller($this->action, $this->request);
 				}else{
 					//method doesn't exist
-					echo '<h1>Method doesn't exist</h1>';
+					echo '<h1>Method does not exist</h1>';
+					return;
 				}
+			}else{
+			       	//base controller doesn't exist
+	                        echo '<h1>Base Controller does not exist</h1>';
+                                return;
+			}else{
+				 //Controller Class doesn't exist
+                                echo '<h1>Controller class does not exist</h1>';
+                                return;
 			}
 		}
 	}
