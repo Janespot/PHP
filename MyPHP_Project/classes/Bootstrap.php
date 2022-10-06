@@ -36,11 +36,10 @@ class Bootstrap{
 			       	//base controller doesn't exist
 	                        echo '<h1>Base Controller does not exist</h1>';
                                 return;
-			}else{
-				 //Controller Class doesn't exist
-                                echo '<h1>Controller class does not exist</h1>';
-                                return;
 			}
+		}else{
+			 //Controller Class doesn't exist
+                         echo '<h1>Controller class does not exist</h1>'                                 return;
 		}
 	}
 }
